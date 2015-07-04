@@ -1,0 +1,33 @@
+-cmd cd ..
+-cmd rm -f -R pages
+-cmd rm -f -R xml
+--next 
+
+--no-output
+-cp tools
+--macro ImportAll.run("macrox")
+-dce std
+-D doc-gen
+-cp src
+
+--each
+
+#-neko all.n
+#-xml tools/xml/neko.xml
+
+#--next
+
+-js all.js
+-xml tools/xml/js.xml
+
+--next
+
+--interp
+-xml tools/xml/macro.xml
+
+
+
+
+
+#--next
+#-cmd haxelib run dox -i xml -in macrox -ex macrox.test --title "MacroX - Full powered macros!"

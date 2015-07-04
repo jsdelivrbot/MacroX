@@ -1,0 +1,11 @@
+<component name="CopyrightManager">
+  <settings default="Haxe">
+    <module2copyright>
+      <element module="Haxe" copyright="Haxe" />
+      <element module="Project Files" copyright="Haxe" />
+    </module2copyright>
+    <LanguageOptions name="__TEMPLATE__">
+      <option name="block" value="false" />
+    </LanguageOptions>
+  </settings>
+</component>

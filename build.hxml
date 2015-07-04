@@ -1,0 +1,22 @@
+-cp src
+-cp tests
+
+
+-D no-macro-cache
+-D test
+-D define=value
+#--run Main
+-main Main
+-x tests
+
+-cmd rm tests.n
+#--run macrox.test.MainMeta2
+
+#--run MainTest
+
+#-main MainTest
+#--macro MainTest.use()
+
+#--no-output
+
+#-js bin/out.js

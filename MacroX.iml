@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="HAXE_MODULE" version="4">
+  <component name="HaxeModuleSettingsStorage">
+    <option name="buildConfig" value="1" />
+    <option name="hxmlPath" value="$MODULE_DIR$/build.hxml" />
+    <option name="outputFolder" value="$MODULE_DIR$/out/production/MacroX" />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="haxelib|src">
+        <CLASSES>
+          <root url="file://src" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="haxelib|tests">
+        <CLASSES>
+          <root url="file://tests" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://tests" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
