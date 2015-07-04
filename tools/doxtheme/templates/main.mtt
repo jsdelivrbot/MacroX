@@ -36,8 +36,8 @@
 	    <a class="brand" href="http://haxe.org/"><img src="http://haxe.org/img/haxe-logo-horizontal-on-dark.svg" width="107" height="21" alt="Haxe" onerror="this.src='http://haxe.org/img/haxe-logo-horizontal-on-dark.png'"/></a>
 	    <a class="tagline" href="::api.config.rootPath::index.html">MacroX API Documentation</a>			
 		<div class="pull-right">
-			<a href="http://haxe.org/download/" target="_blank">Source</a> |
-			<a href="http://haxe.org/manual/" target="_blank">Read the manual</a>
+			<a href="https://github.com/porfirioribeiro/MacroX/" target="_blank">Source</a> |
+			<a href="https://rawgit.com/porfirioribeiro/MacroX/master/docs/api/" target="_blank">Read the manual</a>
 		</div>
 	   </div>
 	  </div>
