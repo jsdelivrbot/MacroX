@@ -26,7 +26,7 @@ class Test<T> implements ITest<T> {
 #end
 #if !macro @:build(MainTest.build()) #end
 class MainTest{
-	
+
 	static function main() {}
 	#if macro
 	static function build() {
@@ -40,7 +40,7 @@ class MainTest{
 		k.meta.add(':genericBuild', [macro MainTest.genericBuild()],k.pos);
 		k.meta.add(':generic', [],k.pos);
 		return haxe.macro.Context.getBuildFields();
-	}	
+	}
 	static function genericBuild() {
 		var k = Context.getLocalClass().get();
 		var t = Context.getLocalType();
@@ -58,6 +58,6 @@ class MainTest{
 			//return null;
 		//});
 	}
-	
+
 	#end
 }

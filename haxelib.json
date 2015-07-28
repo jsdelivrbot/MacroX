@@ -1,0 +1,10 @@
+{
+    "name": "MacroX",
+    "license": "MIT",
+    "tags": ["macro"],
+    "description": "MacroX",
+    "version": "0.0.1",
+    "releasenote": "First Release",
+    "contributors": ["porfirio"],
+    "classPath": "src"
+}

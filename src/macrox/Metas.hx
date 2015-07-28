@@ -134,7 +134,7 @@ abstract Metas(String) to String from String {
      *
      */
     public macro function extractFrom(ethis:Expr, md:ExprOf<AMetadata>, allFn:Array<ExprOf<Dynamic -> Void>>){
-        var e=macro ($md.getAll($ethis) : AllMetaValue);
+        var e=macro (($md : macrox.AMetadata).getAll($ethis) : macrox.Metas.AllMetaValue);
         for (fn in allFn){
             var fa=parseFn(fn);
             switch (fa.type){

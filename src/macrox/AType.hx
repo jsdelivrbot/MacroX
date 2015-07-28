@@ -3,7 +3,7 @@
 // https://github.com/porfirioribeiro/HxTag/blob/master/LICENSE
 
 package macrox;
-#if macro
+#if (macro || display)
 import haxe.macro.Context;
 import haxe.extern.EitherType;
 import haxe.macro.ComplexTypeTools;
@@ -26,6 +26,9 @@ abstract AType(EitherType<Type,ComplexType>) from EitherType<Type,ComplexType> {
     /** @see [`haxe.macro.Context.getType`](http://api.haxe.org/haxe/macro/Context.html#getType)*/
     @:from public static function get(name:String)
         return cast Context.getType(name);
+    @:from public static function fromClassType(ct:ClassType)
+        return cast TPath( { pack:ct.pack, name:ct.name } );
+    
     /** @see [`haxe.macro.ComplexTypeTools.toType`](http://api.haxe.org/haxe/macro/ComplexTypeTools.html#toType)*/
     @:to public inline function toType():Type 
         return if (Std.is(this, Type)) this; else ComplexTypeTools.toType(this);

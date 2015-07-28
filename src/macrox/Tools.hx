@@ -66,6 +66,23 @@ class TypeTools {
     /** @see [`haxe.macro.TypeTools.findField`](http://api.haxe.org/haxe/macro/TypeTools.html#findField)*/
 	static public inline function findField(t:AType,name:String, isStatic:Bool = false):Null<ClassField> 
         return HxTypeTools.findField(t, name, isStatic);
+
+    static public function hasInterface(t:AType,i:AType){
+    	if (t==null && i==null) return false;
+		switch(follow(t)) {
+			case TInst(c, _): 
+				var ct=c.get();
+				for (c in ct.interfaces) {
+					if (unify(c.t.get(),i))
+						return true;
+					if (ct.superClass != null) 
+					if (hasInterface(ct.superClass.t.get(),i))
+						return true;
+				}
+			case _: return false;
+		}
+    	return false;
+    }
 	#end
 }
 /**
