@@ -37,7 +37,7 @@
 	    <a class="tagline" href="::api.config.rootPath::index.html">MacroX API Documentation</a>			
 		<div class="pull-right">
 			<a href="https://github.com/porfirioribeiro/MacroX/" target="_blank">Source</a> |
-			<a href="https://rawgit.com/porfirioribeiro/MacroX/master/docs/api/" target="_blank">Read the manual</a>
+			<a href="https://cdn.jsdelivr.net/gh/porfirioribeiro/MacroX@master/docs/api/" target="_blank">Read the manual</a>
 		</div>
 	   </div>
 	  </div>
